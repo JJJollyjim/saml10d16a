@@ -1,0 +1,18 @@
+[package]
+name = "saml10d16a"
+version = "0.1.0"
+authors = ["Jamie McClymont <jamie@kwiius.com>"]
+edition = "2018"
+repository = "https://github.com/JJJollyjim/saml10d16a"
+
+[dependencies]
+bare-metal = "0.2.0"
+cortex-m = "0.5.8"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.5"
+
+[features]
+rt = ["cortex-m-rt/device"]
